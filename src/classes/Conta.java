@@ -11,6 +11,7 @@ public class Conta {
 	private double saldo;
 	private double limite;
 	private Agencia agencia;
+	private Cliente cliente;
 	
 	
 	
@@ -37,6 +38,12 @@ public class Conta {
 	}
 	public void setAgencia(Agencia agencia) {
 		this.agencia = agencia;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 	
 	
