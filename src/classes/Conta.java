@@ -6,7 +6,7 @@ package classes;
 /**
  * @author jonascosta
  */
-public class Conta {
+public abstract class Conta {
 	private int numero_conta;
 	private double saldo;
 	private double limite;
@@ -45,6 +45,28 @@ public class Conta {
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
+	
+	void deposita(double valor){
+		this.saldo += valor;
+	}
+	
+	double consulta_saldo(){
+		return this.saldo;
+	}
+	
+	void saque(double valor){
+		this.saldo -= valor;
+	}
+	
+	void extrato_conta(){
+		System.out.println("saldo: " + this.saldo);
+		System.out.println("limite: " + this.limite);
+	}
+	
+	
+	
+	
+	
 	
 	
 

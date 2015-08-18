@@ -12,7 +12,7 @@ public abstract class  Pessoa {
 	private String sobre_nome;
 	private double peso;
 	private double altura;
-	private long cpf;
+	private String cpf;
 	
 	
 	public String getNome() {
@@ -45,10 +45,10 @@ public abstract class  Pessoa {
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
-	public long getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(long cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 	

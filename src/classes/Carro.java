@@ -6,7 +6,7 @@ package classes;
 /**
  * @author jonascosta
  */
-public abstract class Carro {
+public class Carro {
 	private String nome;
 	private String modelo;
 	private int ano;

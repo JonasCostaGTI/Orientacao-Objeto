@@ -3,9 +3,14 @@
  */
 package testes;
 
+import classes.Carro;
 import classes.Cartao_de_credito;
 import classes.Cliente;
 import classes.Conta;
+import classes.Conta_corrente;
+
+import classes.Funcionario;
+import classes.Roda;
 
 /**
  * @author jonascosta
@@ -13,42 +18,39 @@ import classes.Conta;
 public class Testes {
 
 	public static void main(String[] args) {
-
-		// K19
-		Cartao_de_credito cartao_1 = new Cartao_de_credito();
-		Cliente cliente_1 = new Cliente();
-
-		cartao_1.setNumero_cartao(11111);
-		cartao_1.setData_validade_cartao("01/01/20015");
-		cartao_1.setCliente(cliente_1);
-		cartao_1.getCliente().setNome("Jonas");
-		cartao_1.getCliente().setCodigo_cliente(1234);
-		cartao_1.getCliente().setCpf(33333333);
-
-		// cartao 2 do cliente cl1
-
-		Cartao_de_credito cartao_2 = new Cartao_de_credito();
-		cartao_2.setCliente(cliente_1);
-		cartao_2.setNumero_cartao(222222);
-		cartao_2.setData_validade_cartao("01/01/2020");
-		cartao_2.getCliente().setNome(cartao_1.getCliente().getNome());
+//		Cliente cliente = new Cliente();
+//		Cliente b = new Cliente();
+//		Conta_corrente conta_corrente = new Conta_corrente();
+//		
+//		conta_corrente.setCliente(cliente);
+//		conta_corrente.getCliente().setNome("Jonas");
+//		conta_corrente.getCliente().setCpf("222-444-333-59");
+//		conta_corrente.setSaldo(100);
+//		System.out.println(conta_corrente.getCliente().getNome());
+//		
+//		conta_corrente.setCliente(b);
+//		conta_corrente.getCliente().setNome("pedro");
+//		
+//		System.out.println(conta_corrente.getCliente().getNome());
 		
-		// conta do cliente 
+	
+		Carro carro = new Carro();
+		Funcionario funcionario = new Funcionario();
 		
-		Conta c_corrente = new Conta();
-		c_corrente.setCliente(cliente_1);
-		c_corrente.getCliente().setNome(cliente_1.getNome());;
+		funcionario.setNome("jonas");
+		funcionario.setSalario(2300);
+		funcionario.setRegistro(3747);
 		
-
-		System.out.println("Cartao 1 do cliente "+ cartao_1.getCliente().getNome());
-		System.out.println("Cartao 2 do cliente "+ cartao_2.getCliente().getNome());
-		System.out.println("Codigo do cliente: "+ cartao_1.getCliente().getCodigo_cliente());
-		System.out.println("CPF do cliente " + cartao_1.getCliente().getCpf());
-		System.out.println("numero do cartao 1: " + cartao_1.getNumero_cartao());
-		System.out.println("numero do cartao 2: " + cartao_2.getNumero_cartao());
-		System.out.println("conta corrente " + c_corrente.getCliente().getNome());
-
-		System.out.println("  -------------  ");
+		funcionario.setCarro(carro);
+		funcionario.getCarro().setAno(2009);
+		funcionario.getCarro().setMarca("chevrolet");
+		
+		funcionario.consulta_dados();
+		
+		
+	
+		
+		
 
 
 	}

@@ -34,8 +34,19 @@ public class Funcionario extends Pessoa {
 		this.salario = salario;
 	}
 	
-	public void folga(){
+	void folga(){
 		System.out.println(this.getNome() + " Esta de folga");
+	}
+	
+	public void aumento_salario(double novo_salario){
+		this.salario = novo_salario;
+	}
+	
+	public void consulta_dados(){
+		System.out.println("Nome: " + getNome());
+		System.out.println("Registro: " + this.registro);
+		System.out.println("Salario: " + this.salario);
+		System.out.println("Carro ano: " + this.carro.getAno() + ", Marca: " + this.carro.getMarca());
 	}
 	
 	
