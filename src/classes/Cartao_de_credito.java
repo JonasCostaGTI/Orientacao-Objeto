@@ -8,6 +8,9 @@ public class Cartao_de_credito {
 	
 	
 	
+	public Cartao_de_credito(long numero_cartao) {
+		this.numero_cartao = numero_cartao;
+	}
 	public Cliente getCliente() {
 		return cliente;
 	}

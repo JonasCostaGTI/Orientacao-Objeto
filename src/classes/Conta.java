@@ -15,6 +15,11 @@ public abstract class Conta {
 	
 	
 	
+	
+	
+	public Conta(Agencia agencia) {
+		this.agencia = agencia;
+	}
 	public int getNumero_conta() {
 		return numero_conta;
 	}

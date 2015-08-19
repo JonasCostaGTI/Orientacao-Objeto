@@ -10,8 +10,6 @@ import interfaces.Promocao;
  */
 public class Gerente extends Funcionario implements Promocao{
 	
-	
-	
 	@Override
 	public void aumento_salario(double valor) {
 		setSalario(getSalario() + valor);

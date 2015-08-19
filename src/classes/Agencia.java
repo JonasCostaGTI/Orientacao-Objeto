@@ -10,7 +10,9 @@ public class Agencia {
 	private int numero_agencia;
 	private Cliente cliente;
 	
-	
+	public Agencia(int numero){
+		this.numero_agencia = numero;
+	}
 
 	public Cliente getCliente() {
 		return cliente;
