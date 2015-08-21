@@ -6,11 +6,11 @@ package testes;
 import classes.Carro;
 import classes.Cartao_de_credito;
 import classes.Cliente;
-import classes.Conta;
 import classes.Conta_corrente;
 
 import classes.Funcionario;
 import classes.Roda;
+import classes_abstratas.Conta;
 
 /**
  * @author jonascosta
@@ -36,6 +36,9 @@ public class Testes {
 	
 		Carro carro = new Carro();
 		Funcionario funcionario = new Funcionario();
+		Cliente cliente = new Cliente();
+		cliente.setNome("jonas");
+		
 		
 		funcionario.setNome("jonas");
 		funcionario.setSalario(2300);
@@ -45,7 +48,14 @@ public class Testes {
 		funcionario.getCarro().setAno(2009);
 		funcionario.getCarro().setMarca("chevrolet");
 		
+		Cartao_de_credito cartao_de_credito = new Cartao_de_credito(123, "01/01/2015");
+		cartao_de_credito.setCliente(cliente);
+	
+		
+		
 		funcionario.consulta_dados();
+		System.out.println("");
+		cliente.consulta_dados_cliente();
 		
 		
 	

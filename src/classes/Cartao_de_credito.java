@@ -4,13 +4,12 @@ public class Cartao_de_credito {
 	private long numero_cartao;
 	private String data_validade_cartao;
 	private Cliente cliente;
-	
-	
-	
-	
-	public Cartao_de_credito(long numero_cartao) {
+
+	public Cartao_de_credito(long numero_cartao, String data_validade_cartao) {
 		this.numero_cartao = numero_cartao;
+		this.data_validade_cartao = data_validade_cartao;
 	}
+
 	public Cliente getCliente() {
 		return cliente;
 	}
@@ -30,13 +29,10 @@ public class Cartao_de_credito {
 		this.data_validade_cartao = data_validade_cartao;
 	}
 
-	
 	@Override
 	public String toString() {
 		return "Cartao_de_credito [numero_cartao=" + numero_cartao
 				+ ", data_validade_cartao=" + data_validade_cartao + "]";
 	}
-	
-	
 
 }

@@ -3,6 +3,8 @@
  */
 package classes;
 
+import classes_abstratas.Pessoa;
+
 /**
  * @author jonascosta
  */
@@ -43,6 +45,7 @@ public class Funcionario extends Pessoa {
 	}
 	
 	public void consulta_dados(){
+		System.out.println("DADOS DO FUNCIONARIO");
 		System.out.println("Nome: " + getNome());
 		System.out.println("Registro: " + this.registro);
 		System.out.println("Salario: " + this.salario);

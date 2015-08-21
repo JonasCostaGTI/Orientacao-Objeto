@@ -3,6 +3,8 @@
  */
 package classes;
 
+import classes_abstratas.Conta;
+
 /**
  * @author jonascosta
  */

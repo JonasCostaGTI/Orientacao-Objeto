@@ -1,7 +1,10 @@
 /**
  * 
  */
-package classes;
+package classes_abstratas;
+
+import classes.Agencia;
+import classes.Cliente;
 
 /**
  * @author jonascosta
