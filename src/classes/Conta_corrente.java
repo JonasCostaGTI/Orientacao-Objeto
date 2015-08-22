@@ -10,8 +10,8 @@ import classes_abstratas.Conta;
  */
 public class Conta_corrente extends Conta {
 
-	public Conta_corrente(Agencia agencia) {
-		super(agencia);
+	public Conta_corrente(Agencia agencia, Cliente cliente) {
+		super(agencia, cliente);
 		
 	}
 

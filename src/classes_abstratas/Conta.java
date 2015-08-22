@@ -20,8 +20,9 @@ public abstract class Conta {
 	
 	
 	
-	public Conta(Agencia agencia) {
+	public Conta(Agencia agencia, Cliente cliente) {
 		this.agencia = agencia;
+		this.cliente = cliente;
 	}
 	public int getNumero_conta() {
 		return numero_conta;
@@ -54,21 +55,26 @@ public abstract class Conta {
 		this.cliente = cliente;
 	}
 	
-	void deposita(double valor){
+	public void deposita(double valor){
 		this.saldo += valor;
 	}
 	
-	double consulta_saldo(){
-		return this.saldo;
+	public void consulta_saldo(){
+		System.out.println(this.saldo);
 	}
 	
-	void saque(double valor){
+	public void saque(double valor){
 		this.saldo -= valor;
 	}
 	
-	void extrato_conta(){
+	public void extrato_conta(){
 		System.out.println("saldo: " + this.saldo);
 		System.out.println("limite: " + this.limite);
+	}
+	
+	public void transfere(Conta destino, double valor){
+		this.saldo -= valor;
+		destino.saldo += valor;
 	}
 	
 	
