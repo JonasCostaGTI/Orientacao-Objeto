@@ -9,9 +9,19 @@ package classes;
 public class Agencia {
 	private int numero_agencia;
 	private Cliente cliente;
-	
-	public Agencia(int numero){
+	private static int contador;
+
+	public static int getContador() {
+		return contador;
+	}
+
+	public static void setContador(int contador) {
+		Agencia.contador = contador;
+	}
+
+	public Agencia(int numero) {
 		this.numero_agencia = numero;
+		Agencia.contador++;
 	}
 
 	public Cliente getCliente() {
@@ -32,10 +42,7 @@ public class Agencia {
 
 	@Override
 	public String toString() {
-		return "Agencia [numero_agencia=" + numero_agencia + ", cliente="
-				+ cliente + "]";
+		return "Agencia [numero_agencia=" + numero_agencia + ", cliente=" + cliente + "]";
 	}
-	
-	
-	
+
 }
