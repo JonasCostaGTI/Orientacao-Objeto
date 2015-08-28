@@ -13,6 +13,19 @@ public class Funcionario extends Pessoa {
 	private double salario;
 	private Carro carro;
 	private static double vale_refeicao;
+	private static int contador;
+
+	public Funcionario() {
+		Funcionario.contador++;
+	}
+
+	public static int getContador() {
+		return contador;
+	}
+
+	public static void setContador(int contador) {
+		Funcionario.contador = contador;
+	}
 
 	public static double getVale_refeicao() {
 		return vale_refeicao;
@@ -46,7 +59,7 @@ public class Funcionario extends Pessoa {
 		this.salario = salario;
 	}
 
-	void folga() {
+	public void folga() {
 		System.out.println(this.getNome() + " Esta de folga");
 	}
 

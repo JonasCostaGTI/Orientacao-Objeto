@@ -9,7 +9,6 @@ import classes_abstratas.Conta;
  * @author jonascosta
  */
 public class Conta_corrente extends Conta {
-
 	private static int contador;
 
 	public static int getContador() {

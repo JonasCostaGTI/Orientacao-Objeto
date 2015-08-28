@@ -20,9 +20,11 @@ public class Testes {
 		cliente1.setNome("jonas");
 		Cliente cliente2 = new Cliente();
 		cliente2.setNome("Pedro");
+		System.out.println("Numero de Clientes criadas: " + Cliente.getContador());
 
 		Cartao_de_credito cartao_de_credito = new Cartao_de_credito(123, "01/01/2015");
 		cartao_de_credito.setCliente(cliente1);
+		System.out.println("Numero de Cartao de Creditos criadas: " + Cartao_de_credito.getContador());
 
 		Agencia agencia_centro = new Agencia(1234);
 		Agencia agencia_parque = new Agencia(8789);
@@ -36,6 +38,7 @@ public class Testes {
 		conta1.setSaldo(3000);
 		conta2.setSaldo(1200);
 
+		System.out.println("");
 		System.out.println("SALDO DA CONTA 1 ANTES DA TRANSFERENCIA");
 		conta1.consulta_saldo();
 		System.out.println("");
@@ -43,8 +46,10 @@ public class Testes {
 		System.out.println("SALDO DA CONTA 2 ANTES DA TRANSFERENCIA");
 		conta2.consulta_saldo();
 
+		System.out.println("transferencia... ");
 		conta1.transfere(conta2, 200);
 
+		System.out.println("");
 		System.out.println("CLIENTE 1");
 		cliente1.consulta_dados_cliente();
 		conta1.consulta_saldo();
@@ -56,11 +61,11 @@ public class Testes {
 
 		// maneira correta de acessar atributo static de uma classe
 		Funcionario.setVale_refeicao(14);
-		Funcionario.reajuste_vale_refeicao(3);
 
 		// errado
 		// Funcionario f = new Funcionario();
 		// f.setVale_refeicao(10);
+
 	}
 
 }
