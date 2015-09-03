@@ -7,6 +7,7 @@ import classes.Agencia;
 import classes.Cartao_de_credito;
 import classes.Cliente;
 import classes.Conta_corrente;
+import classes.Emprestimo;
 import classes.Funcionario;
 
 /**
@@ -65,6 +66,15 @@ public class Testes {
 		// errado
 		// Funcionario f = new Funcionario();
 		// f.setVale_refeicao(10);
+
+		System.out.println("");
+		System.out.println("EMPRESTIMOS");
+
+		Emprestimo emprestimo = new Emprestimo(cliente1);
+		emprestimo.setValor_emprestimo(2000);
+
+		System.out.println("Valor de emprestimo de " + emprestimo.getCliente().getNome() + " é de: "
+				+ emprestimo.getValor_emprestimo());
 
 	}
 
