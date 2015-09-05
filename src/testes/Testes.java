@@ -7,8 +7,10 @@ import classes.Agencia;
 import classes.Cartao_de_credito;
 import classes.Cliente;
 import classes.Conta_corrente;
+import classes.Controle_ponto;
 import classes.Emprestimo;
 import classes.Funcionario;
+import classes.Gerente;
 
 /**
  * @author jonascosta
@@ -75,6 +77,12 @@ public class Testes {
 
 		System.out.println("Valor de emprestimo de " + emprestimo.getCliente().getNome() + " é de: "
 				+ emprestimo.getValor_emprestimo());
+
+		Gerente gerente = new Gerente();
+		gerente.setNome("Jonas Costa");
+
+		Controle_ponto controle_ponto = new Controle_ponto();
+		controle_ponto.controle_entrada(gerente);
 
 	}
 

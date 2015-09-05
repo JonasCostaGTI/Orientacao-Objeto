@@ -12,6 +12,12 @@ public class Emprestimo extends Servico {
 	private double valor_emprestimo;
 	private double valor_taxa_juros;
 
+	@Override
+	public double calcula_taxa() {
+		return this.valor_emprestimo * 0.1;
+
+	}
+
 	public Emprestimo(Cliente cliente) {
 		super();
 		setCliente(cliente);

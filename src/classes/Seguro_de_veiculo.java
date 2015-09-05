@@ -3,14 +3,21 @@
  */
 package classes;
 
+import classes_abstratas.Servico;
+
 /**
  * @author jonascosta
  */
-public class Seguro_de_veiculo {
+public class Seguro_de_veiculo extends Servico {
 
 	private Carro carro;
 	private double valor_seguro;
 	private double franquia;
+
+	@Override
+	public double calcula_taxa() {
+		return 0.05;
+	}
 
 	public Carro getCarro() {
 		return carro;

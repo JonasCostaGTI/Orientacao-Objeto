@@ -8,6 +8,6 @@ package interfaces;
  */
 public interface Promocao {
 
-	void aumento_salario(double valor);
+	public void aumento_salario(double valor);
 
 }
