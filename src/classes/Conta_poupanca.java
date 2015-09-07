@@ -25,4 +25,11 @@ public class Conta_poupanca extends Conta {
 
 	}
 
+	@Override
+	public void extrato_conta() {
+		System.out.println("saldo: " + getSaldo());
+		System.out.println("limite: " + getSaldo());
+
+	}
+
 }

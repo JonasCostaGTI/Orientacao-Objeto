@@ -9,8 +9,8 @@ import classes.Cliente;
 import classes.Conta_corrente;
 import classes.Controle_ponto;
 import classes.Emprestimo;
-import classes.Funcionario;
 import classes.Gerente;
+import classes_abstratas.Funcionario;
 
 /**
  * @author jonascosta

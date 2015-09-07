@@ -1,7 +1,6 @@
 package classes_abstratas;
 
 import classes.Cliente;
-import classes.Funcionario;
 
 public abstract class Servico {
 	private Cliente cliente;

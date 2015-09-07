@@ -3,6 +3,7 @@
  */
 package classes;
 
+import classes_abstratas.Funcionario;
 import interfaces.Promocao;
 
 /**

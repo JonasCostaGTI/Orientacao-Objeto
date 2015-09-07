@@ -1,14 +1,14 @@
 /**
  * 
  */
-package classes;
+package classes_abstratas;
 
-import classes_abstratas.Pessoa;
+import classes.Carro;
 
 /**
  * @author jonascosta
  */
-public class Funcionario extends Pessoa {
+public abstract class Funcionario extends Pessoa {
 	private int registro;
 	private double salario;
 	private Carro carro;
