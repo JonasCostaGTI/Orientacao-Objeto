@@ -2,6 +2,13 @@ package classes;
 
 import classes_abstratas.Pessoa;
 
+/**
+ * 
+ * Documentacao da classe clientes
+ * 
+ * @author jonascosta
+ */
+
 public class Cliente extends Pessoa {
 	private int codigo_cliente;
 	private static int contador;

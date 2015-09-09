@@ -4,6 +4,8 @@
 package classes;
 
 /**
+ * Documentacao da classe agencia
+ * 
  * @author jonascosta
  */
 public class Agencia {

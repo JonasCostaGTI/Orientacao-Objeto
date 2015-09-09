@@ -19,6 +19,12 @@ public class Conta_corrente extends Conta {
 		Conta_corrente.contador = contador;
 	}
 
+	/**
+	 * 
+	 * @param agencia
+	 * @param cliente
+	 *            numero da agencia e o cliente
+	 */
 	public Conta_corrente(Agencia agencia, Cliente cliente) {
 		super(agencia, cliente);
 		Conta_corrente.contador++;
