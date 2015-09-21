@@ -27,6 +27,10 @@ public class Gerente extends Funcionario implements Promocao {
 
 	@Override
 	public void aumento_salario(double valor) {
+		if (valor <= 0) {
+			IllegalArgumentException erro = new IllegalArgumentException();
+			throw erro;
+		}
 		setSalario(getSalario() + valor);
 	}
 
